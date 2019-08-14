@@ -83,19 +83,7 @@ L.Control.Velocity = L.Control.extend({
       !isNaN(gridValue[1]) &&
       gridValue[2]
     ) {
-      htmlOut =
-        "<strong>" +
-        this.options.velocityType +
-        " Direction: </strong>" +
-        self
-          .vectorToDegrees(
-            gridValue[0],
-            gridValue[1],
-            this.options.angleConvention
-          )
-          .toFixed(2) +
-        "°" +
-        ", <strong>" +
+      htmlOut = "<strong>" +
         this.options.velocityType +
         " Speed: </strong>" +
         self
