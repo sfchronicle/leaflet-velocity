@@ -218,7 +218,7 @@ L.Control.Velocity = L.Control.extend({
     var htmlOut = "";
 
     if (gridValue && !isNaN(gridValue[0]) && !isNaN(gridValue[1]) && gridValue[2]) {
-      htmlOut = "<strong>" + this.options.velocityType + " Speed: </strong>" + self.vectorToSpeed(gridValue[0], gridValue[1], this.options.speedUnit).toFixed(2) + this.options.speedUnit;
+      htmlOut = "<strong>Speed: </strong>" + self.vectorToSpeed(gridValue[0], gridValue[1], this.options.speedUnit).toFixed(2) + this.options.speedUnit;
     } else {
       htmlOut = this.options.emptyString;
     }
