@@ -83,9 +83,7 @@ L.Control.Velocity = L.Control.extend({
       !isNaN(gridValue[1]) &&
       gridValue[2]
     ) {
-      htmlOut = "<strong>" +
-        this.options.velocityType +
-        " Speed: </strong>" +
+      htmlOut = "<strong>Speed: </strong>" +
         self
           .vectorToSpeed(gridValue[0], gridValue[1], this.options.speedUnit)
           .toFixed(2) +
